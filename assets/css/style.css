@@ -39,13 +39,11 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 0; /* Remove gaps between items */
-    justify-content: center; /* Center the grid horizontally */
-    align-items: center; /* Center the grid vertically */
+    gap: 0; /* Remove all gaps between items */
     height: calc(100vh - 100px); /* Full height minus header */
-    width: calc(100vh - 100px); /* Match width to height for a perfect square */
+    width: calc(100vh - 100px); /* Ensure width matches height to form a square */
     margin: 0 auto; /* Center the grid container on the page */
-    text-align: center; /* Center text inside grid items */
+    text-align: center;
 }
 
 /* Grid Items */
@@ -61,6 +59,7 @@ body {
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
 }
+
 
 /* Font-Face Definitions */
 @font-face {
