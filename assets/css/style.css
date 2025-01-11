@@ -1,0 +1,30 @@
+/* General Reset */
+body, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif; /* Temporary default font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Background color for the page */
+  }
+  
+  /* Header Styling */
+  .lp-header {
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    width: 100%; /* Center the header */
+    text-align: center;
+  }
+  
+  .lp-header h1 {
+    font-size: 3rem; /* Adjust the font size */
+    font-weight: bold;
+    color: #333; /* Text color */
+  }
+  
