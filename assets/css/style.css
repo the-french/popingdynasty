@@ -1,67 +1,50 @@
-/* Reset Default Margins and Paddings */
-* {
+/* Reset body and html */
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-    font-family: 'Akwe Pro', Arial, sans-serif; /* Use Akwe Pro as default font */
-    background-color: #f4f4f4; /* Light gray background */
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align content at the top */
-}
-
 /* Header Styling */
 .lp-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-}
-
-.lp-header h1 {
-    font-family: 'Akwe Pro', Arial, sans-serif; /* Apply Akwe Pro font */
-    font-weight: 900; /* Use Black font weight */
-    font-style: italic; /* Use italic style */
-    font-size: 3rem; /* Adjust size */
-    color: #333; /* Text color */
-    margin: 10px 0; /* Slight spacing from top */
+    padding: 20px 0; /* Space around the header */
+    font-family: 'Akwe Pro', Arial, sans-serif;
+    font-weight: 900; /* Black weight */
+    font-style: italic; /* Italic style */
+    font-size: 2rem; /* Header font size */
 }
 
 /* Grid Container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-    grid-template-rows: auto auto; /* Rows adjust based on content */
-    gap: 0; /* Remove gaps between items */
-    height: calc(100vh - 100px); /* Full height minus header */
-    width: calc(100vh - 100px); /* Match width to height for a perfect square */
+    gap: 0; /* Remove gaps between grid items */
+    justify-content: center; /* Center grid horizontally */
+    align-items: start; /* Align items to the top */
     margin: 0 auto; /* Center the grid container */
-    text-align: center;
-    box-sizing: border-box; /* Include padding and border in size calculations */
+    text-align: center; /* Center text inside grid items */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit grid width for better layout */
 }
 
 /* Grid Items */
 .grid-item {
     background-color: #fff;
-    border: 1px solid #333; /* Add borders for visibility */
+    border: 1px solid #333; /* Visible borders */
     font-family: 'Akwe Pro', Arial, sans-serif;
     font-weight: 300; /* Light font */
     font-style: italic; /* Italic style */
-    font-size: 1.5rem; /* Font size for placeholders */
+    font-size: 1.5rem; /* Font size for text */
     color: #333;
-    display: flex; /* Use flexbox for centering content */
+    display: flex; /* Flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-    padding: 10px; /* Add minimal padding around the text */
+    padding: 5px 10px; /* Narrow padding */
     box-sizing: border-box; /* Include padding and border in size calculation */
+    height: auto; /* Dynamically adjust height based on content */
 }
+
 
 /* Font-Face Definitions */
 @font-face {
