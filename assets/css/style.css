@@ -27,8 +27,9 @@ body {
 
 .lp-header h1 {
     font-family: 'Akwe Pro', Arial, sans-serif; /* Apply Akwe Pro font */
-    font-size: 3rem;
-    font-weight: bold; /* Default to bold for header */
+    font-weight: 900; /* Use Black font weight */
+    font-style: italic; /* Use italic style */
+    font-size: 3rem; /* Adjust size */
     color: #333; /* Text color */
     margin: 10px 0; /* Slight spacing from top */
 }
