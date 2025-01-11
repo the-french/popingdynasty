@@ -37,12 +37,11 @@ body {
 /* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 equal-height rows */
+    grid-template-columns: repeat(2, auto); /* 2 columns with automatic width based on content */
     gap: 0; /* Remove gaps between items */
-    height: calc(100vh - 100px); /* Full height minus header */
-    width: calc(100vh - 100px); /* Match width to height for a perfect square */
-    margin: 0 auto; /* Center the grid container */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    text-align: center; /* Center text inside grid items */
 }
 
 /* Grid Items */
@@ -54,13 +53,15 @@ body {
     font-style: italic; /* Italic style */
     font-size: 1.5rem; /* Font size for placeholders */
     color: #333;
+    padding: 10px; /* Add some internal padding */
+    margin: 0; /* Ensure no extra spacing */
+    box-sizing: border-box; /* Include borders and padding in size calculation */
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-    padding: 0; /* Remove internal padding */
-    margin: 0; /* Ensure no extra space inside grid items */
-    box-sizing: border-box; /* Include borders in the size calculation */
+    width: 100%; /* Allow dynamic width */
 }
+
 
 
 /* Font-Face Definitions */
