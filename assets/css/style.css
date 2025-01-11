@@ -38,34 +38,33 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* Spacing between grid items */
-    padding: 20px; /* Space around the grid */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    height: calc(100vh - 100px); /* Adjust height (minus header) */
+    justify-content: center; /* Center grid horizontally */
+    align-items: center; /* Center grid vertically */
+    gap: 0; /* Remove gaps between items */
+    height: calc(100vh - 100px); /* Full height minus header */
+    width: auto; /* Automatically adjust width based on content */
+    text-align: center;
 }
 
 /* Grid Items */
 .grid-item {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 40px 20px; /* Adjust padding */
-    text-align: center;
-    font-family: 'Akwe Pro', Arial, sans-serif; /* Use Akwe Pro */
-    font-weight: 300; /* Light font weight */
+    border: 1px solid #ddd; /* Define borders between items */
+    font-family: 'Akwe Pro', Arial, sans-serif;
+    font-weight: 300; /* Light font */
     font-style: italic; /* Italic style */
-    font-size: 1.5rem; /* Font size for placeholders */
-    font-weight: bold; /* Bold text */
+    font-size: 1.5rem;
     color: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    padding: 20px; /* Add padding for text */
+    min-width: max-content; /* Adjust width based on the widest content */
 }
 
-/* Hover Effects */
-.grid-item:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+/* Force Equal Row Heights */
+.grid-container {
+    grid-auto-rows: 1fr; /* Ensure rows are uniform height */
 }
 
 /* Font-Face Definitions */
