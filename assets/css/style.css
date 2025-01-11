@@ -37,11 +37,14 @@ body {
 /* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, auto); /* 2 columns with automatic width based on content */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    grid-template-rows: auto auto; /* Rows adjust based on content */
     gap: 0; /* Remove gaps between items */
-    justify-content: center; /* Center the grid horizontally */
-    align-items: center; /* Center the grid vertically */
-    text-align: center; /* Center text inside grid items */
+    height: calc(100vh - 100px); /* Full height minus header */
+    width: calc(100vh - 100px); /* Match width to height for a perfect square */
+    margin: 0 auto; /* Center the grid container */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in size calculations */
 }
 
 /* Grid Items */
@@ -53,16 +56,12 @@ body {
     font-style: italic; /* Italic style */
     font-size: 1.5rem; /* Font size for placeholders */
     color: #333;
-    padding: 10px; /* Add some internal padding */
-    margin: 0; /* Ensure no extra spacing */
-    box-sizing: border-box; /* Include borders and padding in size calculation */
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-    width: 100%; /* Allow dynamic width */
+    padding: 10px; /* Add minimal padding around the text */
+    box-sizing: border-box; /* Include padding and border in size calculation */
 }
-
-
 
 /* Font-Face Definitions */
 @font-face {
