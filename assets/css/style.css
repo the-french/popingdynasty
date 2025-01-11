@@ -2,28 +2,27 @@
 body, h1 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   /* Body Styling */
   body {
-    font-family: Arial, sans-serif; /* Temporary default font */
+    font-family: Arial, sans-serif; /* Default font */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4; /* Background color for the page */
+    justify-content: center; /* Horizontally centers content */
+    align-items: flex-start; /* Aligns content at the top */
+    min-height: 100vh; /* Ensures full height of the viewport */
+    background-color: #f4f4f4; /* Background color */
   }
   
   /* Header Styling */
   .lp-header {
-    position: absolute;
-    top: 20px; /* Adjust top position */
-    width: 100%; /* Center the header */
-    text-align: center;
+    text-align: center; /* Center-aligns the text horizontally */
+    margin-top: 20px; /* Adjusts how far down from the top the text sits */
   }
   
   .lp-header h1 {
-    font-size: 3rem; /* Adjust the font size */
+    font-size: 3rem; /* Adjust font size as needed */
     font-weight: bold;
     color: #333; /* Text color */
   }
