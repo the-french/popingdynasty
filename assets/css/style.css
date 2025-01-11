@@ -57,7 +57,9 @@ body {
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-    padding: 0; /* Remove internal padding for a tight fit */
+    padding: 0; /* Remove internal padding */
+    margin: 0; /* Ensure no extra space inside grid items */
+    box-sizing: border-box; /* Include borders in the size calculation */
 }
 
 
