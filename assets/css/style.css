@@ -43,8 +43,9 @@ body {
     justify-content: center; /* Center the grid horizontally */
     align-items: center; /* Center the grid vertically */
     height: calc(100vh - 100px); /* Full height minus header */
-    width: calc(100vh - 100px); /* Match width to height to form a square */
-    margin: 0 auto; /* Center the grid container */
+    width: calc(100vh - 100px); /* Match width to height for a perfect square */
+    margin: 0 auto; /* Center the grid container on the page */
+    text-align: center; /* Center text inside grid items */
 }
 
 /* Grid Items */
