@@ -38,20 +38,19 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows to create a square */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 0; /* Remove gaps between items */
     justify-content: center; /* Center the grid horizontally */
     align-items: center; /* Center the grid vertically */
     height: calc(100vh - 100px); /* Full height minus header */
-    width: calc(100vh - 100px); /* Ensure the width matches the height for a square */
-    text-align: center;
-    margin: 0 auto; /* Center the grid container in the page */
+    width: calc(100vh - 100px); /* Match width to height to form a square */
+    margin: 0 auto; /* Center the grid container */
 }
 
 /* Grid Items */
 .grid-item {
     background-color: #fff;
-    border: 1px solid #ddd; /* Define borders between items */
+    border: 1px solid #333; /* Add borders for visibility */
     font-family: 'Akwe Pro', Arial, sans-serif;
     font-weight: 300; /* Light font */
     font-style: italic; /* Italic style */
@@ -60,11 +59,6 @@ body {
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
-}
-
-/* Force Equal Row Heights */
-.grid-container {
-    grid-auto-rows: 1fr; /* Ensure rows are uniform height */
 }
 
 /* Font-Face Definitions */
