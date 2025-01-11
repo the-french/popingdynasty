@@ -34,6 +34,40 @@ body {
     margin: 10px 0; /* Slight spacing from top */
 }
 
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px; /* Space around the grid */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: calc(100vh - 100px); /* Adjust height (minus header) */
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px 20px; /* Adjust padding */
+    text-align: center;
+    font-family: 'Akwe Pro', Arial, sans-serif; /* Use Akwe Pro */
+    font-weight: 300; /* Light font weight */
+    font-style: italic; /* Italic style */
+    font-size: 1.5rem; /* Font size for placeholders */
+    font-weight: bold; /* Bold text */
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.grid-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Font-Face Definitions */
 @font-face {
     font-family: 'Akwe Pro';
