@@ -1,23 +1,195 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
-    height: 100vh; /* Full height of the viewport */
+/* Reset Default Margins and Paddings */
+* {
     margin: 0;
-    position: relative; /* Enables absolute positioning relative to the body */
-  }
-  
-  .lp-header {
-    position: absolute; /* Allows precise placement */
-    top: 0; /* Aligns the header to the very top of the page */
-    left: 50%; /* Moves the header horizontally to the center */
-    transform: translateX(-50%); /* Corrects the offset for perfect horizontal centering */
-    text-align: center; /* Ensures text content is centered */
-  }
-  
-  .lp-header h1 {
-    font-size: 3rem; /* Large, bold text */
-    font-weight: bold;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Akwe Pro', Arial, sans-serif; /* Use Akwe Pro as default font */
+    background-color: #f4f4f4; /* Light gray background */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align content at the top */
+}
+
+/* Header Styling */
+.lp-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.lp-header h1 {
+    font-family: 'Akwe Pro', Arial, sans-serif; /* Apply Akwe Pro font */
+    font-size: 3rem;
+    font-weight: bold; /* Default to bold for header */
     color: #333; /* Text color */
-    margin: 10px 0; /* Adds spacing from the very top */
-  }
-  
+    margin: 10px 0; /* Slight spacing from top */
+}
+
+/* Font-Face Definitions */
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-DemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('../fonts/akwe-pro/AkwePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro UltraThin';
+    src: url('../fonts/akwe-pro/AkwePro-UltraThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akwe Pro UltraThin';
+    src: url('../fonts/akwe-pro/AkwePro-UltraThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
