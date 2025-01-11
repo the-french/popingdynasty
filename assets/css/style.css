@@ -1,31 +1,30 @@
-/* General Reset */
+/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body Styling */
+  /* Full height of the page and center alignment */
   body {
-    font-family: Arial, sans-serif; /* Default font */
-    background-color: #f4f4f4; /* Light background */
+    font-family: Arial, sans-serif;
     height: 100vh; /* Full height of the viewport */
     margin: 0;
-    position: relative; /* Required for absolute positioning of header */
+    background-color: #f4f4f4;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content to the top */
   }
   
-  /* Header Styling */
+  /* Header container styling */
   .lp-header {
-    position: absolute; /* Allows precise placement */
-    top: 0; /* Aligns to the very top of the page */
-    left: 50%; /* Moves the element to the horizontal center */
-    transform: translateX(-50%); /* Ensures the element is perfectly centered */
-    text-align: center; /* Aligns text within the header */
+    margin-top: 20px; /* Adjust this value for spacing from the top */
   }
   
   .lp-header h1 {
-    font-size: 3rem; /* Adjust font size as needed */
+    font-size: 3rem; /* Adjust font size */
     font-weight: bold;
-    color: #333; /* Text color */
+    color: #333;
+    text-align: center;
   }
   
